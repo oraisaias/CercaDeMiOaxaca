@@ -238,6 +238,14 @@ document.getElementById('locationButton').addEventListener('click', () => {
     }
 });
 
+document.getElementById('centerOaxacaButton').addEventListener('click', () => {
+    // Coordenadas del centro de la ciudad de Oaxaca
+    map.jumpTo({
+        center: [-96.7236, 17.0732],
+        zoom: 12
+    });
+});
+
 document.getElementById('closeButton').addEventListener('click', () => {
     document.getElementById('infoPanel').classList.remove('open');
 });
