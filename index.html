@@ -452,17 +452,27 @@ map.on('click', (e) => {
             pointCode = feature.properties.shopCode;
             pointShop = feature.properties.shop;
         } 
-        // Si es una línea, obtener información del punto más cercano
+        // Si es una línea, obtener información del punto al que está conectada
         else if (feature.layer.id === 'routeLayer' || feature.layer.id === 'shortestLine') {
-            // Buscar el punto correspondiente en los datos originales
-            const pointFeatures = map.queryRenderedFeatures(e.point, { layers: ['globe-points'] });
-            if (pointFeatures.length > 0) {
-                const nearestPoint = pointFeatures[0];
-                pointName = nearestPoint.properties.shopName;
-                pointCode = nearestPoint.properties.shopCode;
-                pointShop = nearestPoint.properties.shop;
+            // Obtener las coordenadas del punto final de la línea
+            const lineCoordinates = feature.geometry.coordinates;
+            const endPoint = lineCoordinates[lineCoordinates.length - 1];
+            
+            // Buscar el punto en los datos originales que coincida con las coordenadas finales
+            const allFeatures = map.querySourceFeatures('points');
+            const targetPoint = allFeatures.find(point => {
+                const pointCoords = point.geometry.coordinates;
+                // Comparar coordenadas con tolerancia para errores de precisión
+                return Math.abs(pointCoords[0] - endPoint[0]) < 0.001 && 
+                       Math.abs(pointCoords[1] - endPoint[1]) < 0.001;
+            });
+            
+            if (targetPoint) {
+                pointName = targetPoint.properties.shopName;
+                pointCode = targetPoint.properties.shopCode;
+                pointShop = targetPoint.properties.shop;
             } else {
-                // Si no encontramos el punto, usar información genérica
+                // Fallback si no encontramos el punto exacto
                 pointName = "Punto conectado";
                 pointCode = "N/A";
                 pointShop = "N/A";
