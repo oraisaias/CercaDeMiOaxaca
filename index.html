@@ -39,12 +39,118 @@ body { margin: 0; padding: 0; }
 #locationButton:hover {
     background-color: #005a8b;
 }
+#infoPanel {
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    z-index: 1001;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#infoPanel.open {
+    right: 0;
+}
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+#closeButton:hover {
+    color: #333;
+}
+.point-info {
+    margin-top: 30px;
+}
+.point-info h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+.point-info p {
+    margin: 8px 0;
+    color: #666;
+}
+.point-info strong {
+    color: #333;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    #infoPanel {
+        width: 100%;
+        right: -100%;
+        padding: 15px;
+    }
+    
+    #closeButton {
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+    }
+    
+    .point-info {
+        margin-top: 40px;
+    }
+    
+    .point-info h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .point-info p {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+    
+    #controlBar {
+        bottom: 10px;
+        padding: 6px 12px;
+    }
+    
+    #locationButton {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    #infoPanel {
+        padding: 12px;
+    }
+    
+    .point-info h2 {
+        font-size: 16px;
+    }
+    
+    .point-info p {
+        font-size: 13px;
+    }
+}
 </style>
 </head>
 <body>
 <div id="map"></div>
 <div id="controlBar">
     <button id="locationButton">Get Location</button>
+</div>
+<div id="infoPanel">
+    <button id="closeButton">Close</button>
+    <div class="point-info">
+        <h2>Point Information</h2>
+        <p><strong>Name:</strong> <span id="pointName">Loading...</span></p>
+        <p><strong>Code:</strong> <span id="pointCode">Loading...</span></p>
+        <p><strong>Shop:</strong> <span id="pointShop">Loading...</span></p>
+    </div>
 </div>
 <script>
 
@@ -196,6 +302,15 @@ function addLayers(airports, nearest, route, shortestLine) {
         }
     });
 
+    // Agregar interactividad a los puntos
+    map.on('mouseenter', 'globe-points', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'globe-points', () => {
+        map.getCanvas().style.cursor = '';
+    });
+
     // Capa para mostrar los nombres de los lugares usando shopName
     map.addLayer({
         'id': 'point-labels',
@@ -235,6 +350,46 @@ function addLayers(airports, nearest, route, shortestLine) {
         }
     });
 
+    // Agregar interactividad a los puntos nuevos
+    map.on('mouseenter', 'globe-newPoint', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'globe-newPoint', () => {
+        map.getCanvas().style.cursor = '';
+    });
+
+    map.addLayer({
+        'id': 'routeLayer',
+        'type': 'line',
+        'source': 'newLine',
+        'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-color': '#FAB622',
+            'line-width': [
+                'interpolate',
+                ['linear'],
+                ['zoom'],
+                0,
+                0.5,
+                3,
+                4
+            ]
+        }
+    });
+
+    // Agregar interactividad a las líneas normales
+    map.on('mouseenter', 'routeLayer', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'routeLayer', () => {
+        map.getCanvas().style.cursor = '';
+    });
+
     // Capa para la línea más corta (conexión más cercana)
     map.addLayer({
         'id': 'shortestLine',
@@ -257,6 +412,15 @@ function addLayers(airports, nearest, route, shortestLine) {
             ]
         }
     });
+
+    // Agregar interactividad a la línea más corta
+    map.on('mouseenter', 'shortestLine', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'shortestLine', () => {
+        map.getCanvas().style.cursor = '';
+    });
 }
 
 document.getElementById('locationButton').addEventListener('click', () => {
@@ -269,6 +433,48 @@ document.getElementById('locationButton').addEventListener('click', () => {
                 zoom: 15
             });
         });
+    }
+});
+
+document.getElementById('closeButton').addEventListener('click', () => {
+    document.getElementById('infoPanel').classList.remove('open');
+});
+
+map.on('click', (e) => {
+    const features = map.queryRenderedFeatures(e.point, { layers: ['globe-points', 'routeLayer', 'shortestLine'] });
+    if (features.length > 0) {
+        const feature = features[0];
+        let pointName, pointCode, pointShop;
+        
+        // Si es un punto, obtener información directamente
+        if (feature.layer.id === 'globe-points') {
+            pointName = feature.properties.shopName;
+            pointCode = feature.properties.shopCode;
+            pointShop = feature.properties.shop;
+        } 
+        // Si es una línea, obtener información del punto más cercano
+        else if (feature.layer.id === 'routeLayer' || feature.layer.id === 'shortestLine') {
+            // Buscar el punto correspondiente en los datos originales
+            const pointFeatures = map.queryRenderedFeatures(e.point, { layers: ['globe-points'] });
+            if (pointFeatures.length > 0) {
+                const nearestPoint = pointFeatures[0];
+                pointName = nearestPoint.properties.shopName;
+                pointCode = nearestPoint.properties.shopCode;
+                pointShop = nearestPoint.properties.shop;
+            } else {
+                // Si no encontramos el punto, usar información genérica
+                pointName = "Punto conectado";
+                pointCode = "N/A";
+                pointShop = "N/A";
+            }
+        }
+
+        if (pointName) {
+            document.getElementById('pointName').textContent = pointName;
+            document.getElementById('pointCode').textContent = pointCode;
+            document.getElementById('pointShop').textContent = pointShop;
+            document.getElementById('infoPanel').classList.add('open');
+        }
     }
 });
 </script>
