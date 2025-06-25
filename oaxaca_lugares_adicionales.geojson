@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2500,
+        "shopName": "Parque El Tequio",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Carretera al Aeropuerto",
+        "address.city": "San Juan Bautista la Raya",
+        "address.postCode": "71228",
+        "address.country": "MX",
+        "address.longitude": -96.7194,
+        "address.latitude": 16.9854,
+        "address.phoneNumber": "9511234500"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7194,
+          16.9854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2501,
+        "shopName": "Parque Primavera",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Av. Venus",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68050",
+        "address.country": "MX",
+        "address.longitude": -96.7086,
+        "address.latitude": 17.0805,
+        "address.phoneNumber": "9511234501"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7086,
+          17.0805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2502,
+        "shopName": "Plaza Oaxaca",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Carretera Internacional",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68130",
+        "address.country": "MX",
+        "address.longitude": -96.7035,
+        "address.latitude": 17.0475,
+        "address.phoneNumber": "9511234502"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7035,
+          17.0475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2503,
+        "shopName": "Plaza del Valle",
+        "priceListId": 10,
+        "address.houseNumberOrName": "1007",
+        "address.streetName": "Blvd. José Vasconcelos",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68110",
+        "address.country": "MX",
+        "address.longitude": -96.718,
+        "address.latitude": 17.0305,
+        "address.phoneNumber": "9511234503"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.718,
+          17.0305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2504,
+        "shopName": "Cinépolis Oaxaca",
+        "priceListId": 10,
+        "address.houseNumberOrName": "1007",
+        "address.streetName": "Blvd. José Vasconcelos",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68110",
+        "address.country": "MX",
+        "address.longitude": -96.7178,
+        "address.latitude": 17.0303,
+        "address.phoneNumber": "9511234504"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7178,
+          17.0303
+        ]
+      }
+    }
+  ]
+}

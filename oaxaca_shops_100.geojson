@@ -1,0 +1,384 @@
+[{
+  "type": "Feature",
+  "properties": {
+    "id": "templo_del_carmen_alto",
+    "nombre": "Templo y Ex Convento del Carmen Alto",
+    "direccion": "Garc\u00eda Vigil 600, Col. Centro, Oaxaca de Juárez, Oaxaca"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7225, 17.0660 ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "id": "ex_convento_cuilapam",
+    "nombre": "Ex Convento de Santiago Ap\u00f3stol, Cuil\u00e1pam",
+    "direccion": "Av. Hidalgo s/n, Cuil\u00e1pam de Guerrero, Oaxaca"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.77924, 16.99243 ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "id": "museo_arte_contemporaneo_oaxaca",
+    "nombre": "Museo de Arte Contempor\u00e1neo de Oaxaca (MACO)",
+    "direccion": "Calle Macedonio Alcal\u00e1 202, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.724049, 17.063474 ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "id": "museo_pintores_oaxaquenos",
+    "nombre": "Museo de los Pintores Oaxaque\u00f1os (MUPO)",
+    "direccion": "Av. Independencia 607, Esq. Garc\u00eda Vigil, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7247, 17.0609 ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "id": "museo_rufino_tamayo",
+    "nombre": "Museo de Arte Prehisp\u00e1nico Rufino Tamayo",
+    "direccion": "Av. Morelos 503, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.726944, 17.063444 ]
+  }
+},{
+  "type": "Feature",
+  "properties": {
+    "id": "museo_textil_oaxaca",
+    "nombre": "Museo Textil de Oaxaca",
+    "direccion": "Calle Hidalgo 917, Esq. Fiallo, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.72292, 17.06077 ]
+  }
+},{
+  "type": "Feature",
+  "properties": {
+    "id": "museo_casa_juarez",
+    "nombre": "Museo de Sitio Casa de Ju\u00e1rez",
+    "direccion": "Garc\u00eda Vigil 609, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.724757, 17.067358 ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "id": "centro_cultural_san_pablo",
+    "nombre": "Centro Cultural San Pablo (Ex Convento de San Pablo)",
+    "direccion": "Hidalgo 907, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7242, 17.0625 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "mercado_20_de_noviembre",
+    "nombre": "Mercado 20 de Noviembre",
+    "direccion": "Calle 20 de Noviembre 512, Col. Centro (esq. Mina), Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7250, 17.0579 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "mercado_artesanias",
+    "nombre": "Mercado de Artesan\u00edas de Oaxaca",
+    "direccion": "J.P. Garc\u00eda s/n, Esq. Zaragoza, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7228, 17.0565 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "mercado_sanchez_pascuas",
+    "nombre": "Mercado S\u00e1nchez Pascuas",
+    "direccion": "Porfirio D\u00edaz 719, Col. Centro (Barrio Xochimilco), Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7244, 17.0652 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "mercado_la_merced",
+    "nombre": "Mercado de la Merced",
+    "direccion": "Calle Murgu\u00eda esquina Leandro Valle, Col. La Merced, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7075, 17.0614 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "central_de_abasto_oaxaca",
+    "nombre": "Central de Abasto de Oaxaca",
+    "direccion": "Av. Ju\u00e1rez Maza s/n, Col. Central de Abasto, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7355, 17.0415 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "mercado_tlacolula",
+    "nombre": "Mercado Dominical de Tlacolula",
+    "direccion": "Calles del centro, Tlacolula de Matamoros, Oaxaca"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.4780, 16.9580 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "mercado_zaachila",
+    "nombre": "Mercado Tradicional de Zaachila",
+    "direccion": "Explanada del Z\u00f3calo, Villa de Zaachila, Oaxaca"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.750, 16.951 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "zona_arqueologica_monte_alban",
+    "nombre": "Zona Arqueol\u00f3gica de Monte Alb\u00e1n",
+    "direccion": "Santa Cruz Xoxocotl\u00e1n, Oaxaca (8 km al O de la ciudad)"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.76778, 17.04389 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "zona_arqueologica_mitla",
+    "nombre": "Zona Arqueol\u00f3gica de Mitla",
+    "direccion": "Camino Nacional s/n, San Pablo Villa de Mitla, Oaxaca"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.400000, 16.916667 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "zona_arqueologica_yagul",
+    "nombre": "Zona Arqueol\u00f3gica de Yagul",
+    "direccion": "Camino a Yagul km 1.43, Tlacolula de Matamoros, Oaxaca"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.45014, 16.95836 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "zona_arqueologica_atzompa",
+    "nombre": "Zona Arqueol\u00f3gica de Atzompa",
+    "direccion": "Camino a Atzompa s/n, Santa Mar\u00eda Atzompa, Oaxaca"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.782811, 17.078806 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "zona_arqueologica_dainzu",
+    "nombre": "Zona Arqueol\u00f3gica de Dainz\u00fa",
+    "direccion": "Dainz\u00fa, San Mateo Macuilx\u00f3chitl, Tlacolula, Oaxaca"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.556861, 17.003556 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "arbol_del_tule",
+    "nombre": "\u00c1rbol del Tule",
+    "direccion": "Atrio de la Iglesia, Santa Mar\u00eda del Tule, Oaxaca"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.636111, 17.046500 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "zocalo_oaxaca",
+    "nombre": "Z\u00f3calo de la Ciudad de Oaxaca",
+    "direccion": "Portal de Mercaderes s/n, Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.72529, 17.06053 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "alameda_de_leon",
+    "nombre": "Alameda de Le\u00f3n",
+    "direccion": "Av. Independencia y Hidalgo, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7247, 17.0616 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "plaza_de_la_danza",
+    "nombre": "Plaza de la Danza",
+    "direccion": "Av. Independencia esquina Valerio Trujano, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7302, 17.0640 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "parque_el_llano",
+    "nombre": "Parque Ju\u00e1rez El Llano",
+    "direccion": "Av. Ju\u00e1rez entre Pino Su\u00e1rez y Morelos, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7158, 17.0668 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "jardin_etnobotanico_oaxaca",
+    "nombre": "Jard\u00edn Etnobot\u00e1nico de Oaxaca",
+    "direccion": "Reforma s/n, Centro (Ex Convento Santo Domingo), Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7225, 17.0670 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "plaza_el_panuelito",
+    "nombre": "Jard\u00edn \"El Pa\u00f1uelito\" (Plaza del Carmen Alto)",
+    "direccion": "Garc\u00eda Vigil y Allende, Barrio del Carmen Alto, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7241, 17.0653 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "jardin_conzatti",
+    "nombre": "Jard\u00edn Conzatti",
+    "direccion": "Av. Reforma y Constituci\u00f3n, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7223, 17.0695 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "auditorio_guelaguetza",
+    "nombre": "Auditorio Guelaguetza",
+    "direccion": "Carr. Panor\u00e1mica (Cerro del Fort\u00edn) s/n, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.731000, 17.068639 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "mirador_cerro_fortin",
+    "nombre": "Mirador del Cerro del Fort\u00edn",
+    "direccion": "Cerro del Fort\u00edn (Observatorio), Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7305, 17.0695 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "teatro_macedonio_alcala",
+    "nombre": "Teatro Macedonio Alcal\u00e1",
+    "direccion": "Independencia 900, Col. Centro, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7208, 17.0626 ]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "id": "acueducto_xochimilco",
+    "nombre": "Acueducto de Xochimilco (Los Arquitos)",
+    "direccion": "Calz. Porfirio D\u00edaz y Garc\u00eda Vigil, Barrio Xochimilco, Oaxaca de Ju\u00e1rez"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ -96.7265, 17.0704 ]
+  }
+}
+
+]
