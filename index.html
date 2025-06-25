@@ -1,9 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Mapa de Ubicaciones</title>
+<title>CercaDeMiOaxaca - Mapa Interactivo de Ubicaciones en Oaxaca</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Explora Oaxaca con nuestro mapa interactivo. Encuentra ubicaciones cercanas, busca lugares por nombre o ciudad, y descubre la riqueza cultural de Oaxaca con navegación intuitiva.">
+<meta name="keywords" content="Oaxaca, mapa, ubicaciones, turismo, lugares, búsqueda, geolocalización, México, cultura oaxaqueña">
+<meta name="author" content="CercaDeMiOaxaca">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Spanish">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cercademioaxaca.com/">
+<meta property="og:title" content="CercaDeMiOaxaca - Mapa Interactivo de Oaxaca">
+<meta property="og:description" content="Descubre Oaxaca con nuestro mapa interactivo. Encuentra ubicaciones cercanas y explora la riqueza cultural de esta hermosa región.">
+<meta property="og:image" content="https://cercademioaxaca.com/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://cercademioaxaca.com/">
+<meta property="twitter:title" content="CercaDeMiOaxaca - Mapa Interactivo de Oaxaca">
+<meta property="twitter:description" content="Explora Oaxaca con nuestro mapa interactivo. Encuentra ubicaciones cercanas y descubre lugares únicos.">
+<meta property="twitter:image" content="https://cercademioaxaca.com/twitter-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://cercademioaxaca.com/">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "CercaDeMiOaxaca",
+  "description": "Mapa interactivo para explorar ubicaciones en Oaxaca, México",
+  "url": "https://cercademioaxaca.com/",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "MXN"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "CercaDeMiOaxaca"
+  }
+}
+</script>
+
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.0-beta.2/mapbox-gl.css" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="styles.css" rel="stylesheet">
@@ -12,6 +65,17 @@
 <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
+<!-- Splash Screen -->
+<div id="splashScreen">
+    <div class="splash-logo">
+        <span>📍</span>
+    </div>
+    <h1 class="splash-title">CercaDeMiOaxaca</h1>
+    <p class="splash-subtitle">Explora la riqueza cultural de Oaxaca</p>
+    <div class="loading-spinner"></div>
+    <p class="loading-text">Cargando mapa interactivo...</p>
+</div>
+
 <div id="map"></div>
 <div id="controlBar">
     <button id="locationButton" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 shadow-lg">

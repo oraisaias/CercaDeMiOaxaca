@@ -25,6 +25,15 @@ map.on('load', () => {
             allPoints = d; // Guardar todos los puntos
             getSpoke(airports);
             setupSearch(); // Configurar la búsqueda
+            
+            // Ocultar splash screen después de que todo esté cargado
+            setTimeout(() => {
+                const splashScreen = document.getElementById('splashScreen');
+                splashScreen.classList.add('fade-out');
+                setTimeout(() => {
+                    splashScreen.style.display = 'none';
+                }, 500);
+            }, 1000); // Esperar 1 segundo adicional para asegurar que todo esté listo
         });
 
         map.on('move', () => {
