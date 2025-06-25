@@ -184,12 +184,12 @@ map.on('click', (e) => {
     const features = map.queryRenderedFeatures(e.point, { layers: ['globe-points', 'routeLayer', 'shortestLine'] });
     if (features.length > 0) {
         const feature = features[0];
-        let pointName, pointCode, pointShop;
+        let pointName, pointCity, pointStreet;
         
         if (feature.layer.id === 'globe-points') {
             pointName = feature.properties.shopName;
-            pointCode = feature.properties.shopCode;
-            pointShop = feature.properties.shop;
+            pointCity = feature.properties['address.city'] || feature.properties.city || feature.properties.town || feature.properties.locality || 'No disponible';
+            pointStreet = feature.properties['address.streetName'] || feature.properties.street || feature.properties.address || feature.properties.road || 'No disponible';
         } else if (feature.layer.id === 'routeLayer' || feature.layer.id === 'shortestLine') {
             const lineCoordinates = feature.geometry.coordinates;
             const endPoint = lineCoordinates[lineCoordinates.length - 1];
@@ -203,19 +203,19 @@ map.on('click', (e) => {
             
             if (targetPoint) {
                 pointName = targetPoint.properties.shopName;
-                pointCode = targetPoint.properties.shopCode;
-                pointShop = targetPoint.properties.shop;
+                pointCity = targetPoint.properties['address.city'] || targetPoint.properties.city || targetPoint.properties.town || targetPoint.properties.locality || 'No disponible';
+                pointStreet = targetPoint.properties['address.streetName'] || targetPoint.properties.street || targetPoint.properties.address || targetPoint.properties.road || 'No disponible';
             } else {
                 pointName = "Punto conectado";
-                pointCode = "N/A";
-                pointShop = "N/A";
+                pointCity = "No disponible";
+                pointStreet = "No disponible";
             }
         }
 
         if (pointName) {
             document.getElementById('pointName').textContent = pointName;
-            document.getElementById('pointCode').textContent = pointCode;
-            document.getElementById('pointShop').textContent = pointShop;
+            document.getElementById('pointCity').textContent = pointCity;
+            document.getElementById('pointStreet').textContent = pointStreet;
             document.getElementById('infoPanel').classList.add('open');
         }
     }
