@@ -1,27 +1,97 @@
 let initLoad = true;
+let allPoints = null; // Variable global para almacenar todos los puntos
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWpyYWUiLCJhIjoiZjYyMDFjMTJhNjVhNjRmZGFmNjM1MjE1YTYxYjA3YmYifQ.FpDHggdIAaeBm7v0clXkrA';
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'https://api.maptiler.com/maps/basic/style.json?key=1HCKO0pQuPEfNXXzGgSM',
     center: [-96.7278992, 17.0608748],
-    zoom: 10,
+    zoom: 15,
     projection: 'globe',
-    maxZoom: 18
+    maxZoom: 18,
+    // Límites expandidos para Oaxaca con más libertad de movimiento
+    maxBounds: [
+        [-99.0, 15.0], // Suroeste (longitud, latitud) - más al sur y oeste
+        [-92.5, 19.0]  // Noreste (longitud, latitud) - más al norte y este
+    ]
 });
 
 map.on('load', () => {
     let airports;
+
     map.once('idle', () => {
-        d3.json("./data/greggs-11-may-2025.geojson", function (d) {
+        d3.json("./data/mis-ubicaciones-filtrado.geojson", function (d) {
             airports = d;
+            allPoints = d; // Guardar todos los puntos
             getSpoke(airports);
+            setupSearch(); // Configurar la búsqueda
         });
+
         map.on('move', () => {
             getSpoke(airports);
         });
     });
 });
+
+// Función para configurar la búsqueda
+function setupSearch() {
+    const searchInput = document.getElementById('searchInput');
+    const clearSearch = document.getElementById('clearSearch');
+
+    searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        
+        if (searchTerm.length > 0) {
+            clearSearch.style.display = 'flex';
+            filterPoints(searchTerm);
+        } else {
+            clearSearch.style.display = 'none';
+            showAllPoints();
+        }
+    });
+
+    clearSearch.addEventListener('click', () => {
+        searchInput.value = '';
+        clearSearch.style.display = 'none';
+        showAllPoints();
+    });
+}
+
+// Función para filtrar puntos
+function filterPoints(searchTerm) {
+    if (!allPoints) return;
+
+    const filteredFeatures = allPoints.features.filter(feature => {
+        const name = (feature.properties.shopName || '').toLowerCase();
+        const city = (feature.properties['address.city'] || feature.properties.city || '').toLowerCase();
+        
+        return name.includes(searchTerm) || city.includes(searchTerm);
+    });
+
+    const filteredData = {
+        type: 'FeatureCollection',
+        features: filteredFeatures
+    };
+
+    // Actualizar la fuente de datos del mapa
+    if (map.getSource('points')) {
+        map.getSource('points').setData(filteredData);
+    }
+
+    // Actualizar las líneas de conexión con los puntos filtrados
+    getSpoke(filteredData);
+}
+
+// Función para mostrar todos los puntos
+function showAllPoints() {
+    if (!allPoints) return;
+
+    if (map.getSource('points')) {
+        map.getSource('points').setData(allPoints);
+    }
+
+    getSpoke(allPoints);
+}
 
 function getSpoke(airports) {
     const center = map.getCenter();

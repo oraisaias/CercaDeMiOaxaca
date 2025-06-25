@@ -1,0 +1,1615 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2301,
+        "shopName": "Templo de Santo Domingo de Guzmán",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U1",
+        "address.streetName": "Constitución 101",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.723056,
+        "address.latitude": 17.065556,
+        "address.phoneNumber": "9511234101"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.723056,
+          17.065556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2302,
+        "shopName": "Catedral de Nuestra Señora de la Asunción",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Av. Independencia y García Vigil",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7252911,
+        "address.latitude": 17.0616351,
+        "address.phoneNumber": "9511234102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7252911,
+          17.0616351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2303,
+        "shopName": "Basílica de Nuestra Señora de la Soledad",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Av. Independencia y Calzada Madero",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7299384,
+        "address.latitude": 17.0635444,
+        "address.phoneNumber": "9511234103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7299384,
+          17.0635444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2304,
+        "shopName": "Museo de las Culturas de Oaxaca (Ex Convento Santo Domingo)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U4",
+        "address.streetName": "Calle Macedonio Alcalá s/n",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7229,
+        "address.latitude": 17.066,
+        "address.phoneNumber": "9511234104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7229,
+          17.066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2305,
+        "shopName": "Mercado Benito Juárez",
+        "priceListId": 10,
+        "address.houseNumberOrName": "106",
+        "address.streetName": "Calle Miguel Cabrera",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7268613,
+        "address.latitude": 17.0590027,
+        "address.phoneNumber": "9511234105"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7268613,
+          17.0590027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2398,
+        "shopName": "Templo y Ex Convento del Carmen Alto",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U1",
+        "address.streetName": "García Vigil 600",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7225,
+        "address.latitude": 17.066,
+        "address.phoneNumber": "9511234101"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7225,
+          17.066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2399,
+        "shopName": "Ex Convento de Santiago Apóstol, Cuilápam",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U2",
+        "address.streetName": "Av. Hidalgo s/n",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.77924,
+        "address.latitude": 16.99243,
+        "address.phoneNumber": "9511234102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.77924,
+          16.99243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2400,
+        "shopName": "Museo de Arte Contemporáneo de Oaxaca (MACO)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U3",
+        "address.streetName": "Calle Macedonio Alcalá 202",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.724049,
+        "address.latitude": 17.063474,
+        "address.phoneNumber": "9511234103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.724049,
+          17.063474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2401,
+        "shopName": "Museo de los Pintores Oaxaqueños (MUPO)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "607",
+        "address.streetName": "Av. Independencia",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7246516,
+        "address.latitude": 17.0609423,
+        "address.phoneNumber": "9511234104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7246516,
+          17.0609423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2402,
+        "shopName": "Museo de Arte Prehispánico Rufino Tamayo",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U5",
+        "address.streetName": "Av. Morelos 503",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.726944,
+        "address.latitude": 17.063444,
+        "address.phoneNumber": "9511234105"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.726944,
+          17.063444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2403,
+        "shopName": "Museo Textil de Oaxaca",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U6",
+        "address.streetName": "Calle Hidalgo 917",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.72292,
+        "address.latitude": 17.06077,
+        "address.phoneNumber": "9511234106"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.72292,
+          17.06077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2404,
+        "shopName": "Museo de Sitio Casa de Juárez",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U7",
+        "address.streetName": "García Vigil 609",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.724757,
+        "address.latitude": 17.067358,
+        "address.phoneNumber": "9511234107"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.724757,
+          17.067358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2405,
+        "shopName": "Centro Cultural San Pablo (Ex Convento de San Pablo)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "907",
+        "address.streetName": "Calle Miguel Hidalgo",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7233039,
+        "address.latitude": 17.0608229,
+        "address.phoneNumber": "9511234108"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7233039,
+          17.0608229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2406,
+        "shopName": "Mercado 20 de Noviembre",
+        "priceListId": 10,
+        "address.houseNumberOrName": "512",
+        "address.streetName": "Calle 20 de Noviembre",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7270852,
+        "address.latitude": 17.0580327,
+        "address.phoneNumber": "9511234109"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7270852,
+          17.0580327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2407,
+        "shopName": "Mercado de Artesanías de Oaxaca",
+        "priceListId": 10,
+        "address.houseNumberOrName": "103",
+        "address.streetName": "Calle Zaragoza",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7285247,
+        "address.latitude": 17.0571469,
+        "address.phoneNumber": "9511234110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7285247,
+          17.0571469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2408,
+        "shopName": "Mercado Sánchez Pascuas",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U11",
+        "address.streetName": "Porfirio Díaz 719",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7244,
+        "address.latitude": 17.0652,
+        "address.phoneNumber": "9511234111"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7244,
+          17.0652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2409,
+        "shopName": "Mercado de la Merced",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U12",
+        "address.streetName": "Calle Murguía esquina Leandro Valle",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7075,
+        "address.latitude": 17.0614,
+        "address.phoneNumber": "9511234112"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7075,
+          17.0614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2410,
+        "shopName": "Central de Abasto de Oaxaca",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U13",
+        "address.streetName": "Av. Juárez Maza s/n",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7355,
+        "address.latitude": 17.0415,
+        "address.phoneNumber": "9511234113"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7355,
+          17.0415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2506,
+        "shopName": "Parque Primavera Oaxaqueña",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Calle Primavera y Encinos",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "71245",
+        "address.country": "MX",
+        "address.longitude": -96.7311478,
+        "address.latitude": 17.0515902,
+        "address.phoneNumber": "9511234506"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7311478,
+          17.0515902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2507,
+        "shopName": "Aeropuerto Internacional de Oaxaca (OAX)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "Km 7.5",
+        "address.streetName": "Carretera Oaxaca - Puerto Ángel",
+        "address.city": "Santa Cruz Xoxocotlán",
+        "address.postCode": "71230",
+        "address.country": "MX",
+        "address.longitude": -96.7269655,
+        "address.latitude": 16.9985567,
+        "address.phoneNumber": "9511234507"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7269655,
+          16.9985567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2508,
+        "shopName": "Bosque El Tequio",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Carretera al Aeropuerto",
+        "address.city": "Santa Cruz Xoxocotlán",
+        "address.postCode": "71230",
+        "address.country": "MX",
+        "address.longitude": -96.7179595,
+        "address.latitude": 17.0133212,
+        "address.phoneNumber": "9511234508"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7179595,
+          17.0133212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2411,
+        "shopName": "Mercado Dominical de Tlacolula",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U14",
+        "address.streetName": "Calles del centro",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.478,
+        "address.latitude": 16.958,
+        "address.phoneNumber": "9511234114"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.478,
+          16.958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2412,
+        "shopName": "Mercado Tradicional de Zaachila",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U15",
+        "address.streetName": "Explanada del Zócalo",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.75,
+        "address.latitude": 16.951,
+        "address.phoneNumber": "9511234115"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.75,
+          16.951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2413,
+        "shopName": "Zona Arqueológica de Monte Albán",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U16",
+        "address.streetName": "Santa Cruz Xoxocotlán",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.76778,
+        "address.latitude": 17.04389,
+        "address.phoneNumber": "9511234116"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.76778,
+          17.04389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2433,
+        "shopName": "Zona Arqueológica de Mitla",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Acceso a Zona Arqueológica",
+        "address.city": "San Pablo Villa de Mitla",
+        "address.postCode": "70430",
+        "address.country": "MX",
+        "address.longitude": -96.3593028,
+        "address.latitude": 16.926869,
+        "address.phoneNumber": "9511234136"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.3593028,
+          16.926869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2434,
+        "shopName": "Parque Nacional Benito Juárez",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Camino a San Felipe del Agua",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68040",
+        "address.country": "MX",
+        "address.longitude": -96.6957658,
+        "address.latitude": 17.1105901,
+        "address.phoneNumber": "9511234137"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.6957658,
+          17.1105901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2437,
+        "shopName": "Presa El Estudiante",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Camino a la Presa El Estudiante",
+        "address.city": "San Andrés Huayápam",
+        "address.postCode": "68129",
+        "address.country": "MX",
+        "address.longitude": -96.6567962,
+        "address.latitude": 17.0913399,
+        "address.phoneNumber": "9511234140"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.6567962,
+          17.0913399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2436,
+        "shopName": "El Rincón Café Bar",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Ignacio Zaragoza esquina Av. Lázaro Cárdenas",
+        "address.city": "San Andrés Huayápam",
+        "address.postCode": "68129",
+        "address.country": "MX",
+        "address.longitude": -96.6598023,
+        "address.latitude": 17.086805,
+        "address.phoneNumber": "9511234139"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.6598023,
+          17.086805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2415,
+        "shopName": "Zona Arqueológica de Yagul",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U18",
+        "address.streetName": "Camino a Yagul km 1.43",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.45014,
+        "address.latitude": 16.95836,
+        "address.phoneNumber": "9511234118"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.45014,
+          16.95836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2416,
+        "shopName": "Zona Arqueológica de Atzompa",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U19",
+        "address.streetName": "Camino a Atzompa s/n",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.782811,
+        "address.latitude": 17.078806,
+        "address.phoneNumber": "9511234119"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.782811,
+          17.078806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2417,
+        "shopName": "Zona Arqueológica de Dainzú",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U20",
+        "address.streetName": "Dainzú",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.556861,
+        "address.latitude": 17.003556,
+        "address.phoneNumber": "9511234120"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.556861,
+          17.003556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2418,
+        "shopName": "Árbol del Tule",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U21",
+        "address.streetName": "Atrio de la Iglesia",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.636111,
+        "address.latitude": 17.0465,
+        "address.phoneNumber": "9511234121"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.636111,
+          17.0465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2419,
+        "shopName": "Zócalo de la Ciudad de Oaxaca",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U22",
+        "address.streetName": "Portal de Mercaderes s/n",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.72529,
+        "address.latitude": 17.06053,
+        "address.phoneNumber": "9511234122"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.72529,
+          17.06053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2420,
+        "shopName": "Alameda de León",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U23",
+        "address.streetName": "Av. Independencia y Hidalgo",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7247,
+        "address.latitude": 17.0616,
+        "address.phoneNumber": "9511234123"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7247,
+          17.0616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2421,
+        "shopName": "Plaza de la Danza",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U24",
+        "address.streetName": "Av. Independencia esquina Valerio Trujano",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7302,
+        "address.latitude": 17.064,
+        "address.phoneNumber": "9511234124"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7302,
+          17.064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2422,
+        "shopName": "Parque Juárez El Llano",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Av. Juárez esquina Av. Morelos",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7195034,
+        "address.latitude": 17.0679057,
+        "address.phoneNumber": "9511234125"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7195034,
+          17.0679057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2423,
+        "shopName": "Jardín Etnobotánico de Oaxaca",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U26",
+        "address.streetName": "Reforma s/n",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7225,
+        "address.latitude": 17.067,
+        "address.phoneNumber": "9511234126"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7225,
+          17.067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2438,
+        "shopName": "Plaza del Valle",
+        "priceListId": 10,
+        "address.houseNumberOrName": "1007",
+        "address.streetName": "Blvd. José Vasconcelos",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68110",
+        "address.country": "MX",
+        "address.longitude": -96.7193422,
+        "address.latitude": 17.0378851,
+        "address.phoneNumber": "9511234141"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7193422,
+          17.0378851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2439,
+        "shopName": "Macroplaza Oaxaca",
+        "priceListId": 10,
+        "address.houseNumberOrName": "Km 3.5",
+        "address.streetName": "Carretera Internacional",
+        "address.city": "Santa Lucía del Camino",
+        "address.postCode": "71228",
+        "address.country": "MX",
+        "address.longitude": -96.6945182,
+        "address.latitude": 17.0680086,
+        "address.phoneNumber": "9511234142"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.6945182,
+          17.0680086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2424,
+        "shopName": "Jardín \"El Pañuelito\" (Plaza del Carmen Alto)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Plaza del Carmen Alto",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7245731,
+        "address.latitude": 17.0668351,
+        "address.phoneNumber": "9511234127"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7245731,
+          17.0668351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2425,
+        "shopName": "Jardín Conzatti",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Av. Reforma esquina Av. Constitución",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7216137,
+        "address.latitude": 17.0697014,
+        "address.phoneNumber": "9511234128"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7216137,
+          17.0697014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2426,
+        "shopName": "Auditorio Guelaguetza",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U29",
+        "address.streetName": "Carr. Panorámica (Cerro del Fortín) s/n",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.731,
+        "address.latitude": 17.068639,
+        "address.phoneNumber": "9511234129"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.731,
+          17.068639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2427,
+        "shopName": "Mirador del Cerro del Fortín",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U30",
+        "address.streetName": "Cerro del Fortín (Observatorio)",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7305,
+        "address.latitude": 17.0695,
+        "address.phoneNumber": "9511234130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7305,
+          17.0695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2428,
+        "shopName": "Teatro Macedonio Alcalá",
+        "priceListId": 10,
+        "address.houseNumberOrName": "900",
+        "address.streetName": "Avenida Independencia",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7206904,
+        "address.latitude": 17.0624002,
+        "address.phoneNumber": "9511234131"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7206904,
+          17.0624002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2429,
+        "shopName": "Arcos del Acueducto de Xochimilco",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Calz. Porfirio Díaz esquina García Vigil",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68040",
+        "address.country": "MX",
+        "address.longitude": -96.7225304,
+        "address.latitude": 17.0776021,
+        "address.phoneNumber": "9511234132"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7225304,
+          17.0776021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2403,
+        "shopName": "Catedral de Nuestra Señora de la Asunción #7",
+        "priceListId": 10,
+        "address.houseNumberOrName": "U7",
+        "address.streetName": "García Vigil 600",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.728093,
+        "address.latitude": 17.064518,
+        "address.phoneNumber": "9511234106"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.728093,
+          17.064518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2430,
+        "shopName": "San José del Pacífico",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Carretera Federal 175",
+        "address.city": "San Mateo Río Hondo",
+        "address.postCode": "70861",
+        "address.country": "MX",
+        "address.longitude": -96.5022556,
+        "address.latitude": 16.1696155,
+        "address.phoneNumber": "9511234133"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.5022556,
+          16.1696155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2431,
+        "shopName": "Ixtlán de Juárez",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Carretera 175 Oaxaca-Tuxtepec",
+        "address.city": "Ixtlán de Juárez",
+        "address.postCode": "68725",
+        "address.country": "MX",
+        "address.longitude": -96.4873643,
+        "address.latitude": 17.3321811,
+        "address.phoneNumber": "9511234134"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.4873643,
+          17.3321811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2432,
+        "shopName": "Mirador de Ixtlán",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Camino al Cerro de Cuachirindoo",
+        "address.city": "Ixtlán de Juárez",
+        "address.postCode": "68725",
+        "address.country": "MX",
+        "address.longitude": -96.4842258,
+        "address.latitude": 17.3383472,
+        "address.phoneNumber": "9511234135"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.4842258,
+          17.3383472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2440,
+        "shopName": "Puerto Escondido",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Zona Centro",
+        "address.city": "San Pedro Mixtepec",
+        "address.postCode": "71980",
+        "address.country": "MX",
+        "address.longitude": -97.0772545,
+        "address.latitude": 15.8711483,
+        "address.phoneNumber": "9511234143"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0772545,
+          15.8711483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2441,
+        "shopName": "Playa Carrizalillo",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Playa Carrizalillo",
+        "address.city": "San Pedro Mixtepec",
+        "address.postCode": "71980",
+        "address.country": "MX",
+        "address.longitude": -97.0786841,
+        "address.latitude": 15.8597512,
+        "address.phoneNumber": "9511234144"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0786841,
+          15.8597512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2442,
+        "shopName": "Playa Puerto Angelito",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Playa Puerto Angelito",
+        "address.city": "San Pedro Mixtepec",
+        "address.postCode": "71980",
+        "address.country": "MX",
+        "address.longitude": -97.0747381,
+        "address.latitude": 15.8575822,
+        "address.phoneNumber": "9511234145"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0747381,
+          15.8575822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2443,
+        "shopName": "El Adoquín",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Calle El Adoquín",
+        "address.city": "San Pedro Mixtepec",
+        "address.postCode": "71980",
+        "address.country": "MX",
+        "address.longitude": -97.0628903,
+        "address.latitude": 15.8618497,
+        "address.phoneNumber": "9511234146"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0628903,
+          15.8618497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2446,
+        "shopName": "Playa Zipolite",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Playa Zipolite",
+        "address.city": "San Pedro Pochutla",
+        "address.postCode": "70904",
+        "address.country": "MX",
+        "address.longitude": -96.51773,
+        "address.latitude": 15.6629915,
+        "address.phoneNumber": "9511234149"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.51773,
+          15.6629915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2447,
+        "shopName": "Playa El Elefante",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Playa El Elefante",
+        "address.city": "San Pedro Pochutla",
+        "address.postCode": "70904",
+        "address.country": "MX",
+        "address.longitude": -96.5473067,
+        "address.latitude": 15.6643825,
+        "address.phoneNumber": "9511234150"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.5473067,
+          15.6643825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2448,
+        "shopName": "Mazunte",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Mazunte, zona centro",
+        "address.city": "San Pedro Pochutla",
+        "address.postCode": "70902",
+        "address.country": "MX",
+        "address.longitude": -96.552819,
+        "address.latitude": 15.6649026,
+        "address.phoneNumber": "9511234151"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.552819,
+          15.6649026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2449,
+        "shopName": "Punta Cometa",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Camino a Punta Cometa",
+        "address.city": "San Pedro Pochutla",
+        "address.postCode": "70902",
+        "address.country": "MX",
+        "address.longitude": -96.5561723,
+        "address.latitude": 15.658116,
+        "address.phoneNumber": "9511234152"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.5561723,
+          15.658116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2450,
+        "shopName": "Playa La Entrega",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Bahía de la Entrega",
+        "address.city": "Santa María Huatulco",
+        "address.postCode": "70987",
+        "address.country": "MX",
+        "address.longitude": -96.1288054,
+        "address.latitude": 15.7434496,
+        "address.phoneNumber": "9511234153"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.1288054,
+          15.7434496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2451,
+        "shopName": "Cañón de Tamazulápam",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Cañón Natural",
+        "address.city": "Tamazulápam del Progreso",
+        "address.postCode": "69600",
+        "address.country": "MX",
+        "address.longitude": -97.5799371,
+        "address.latitude": 17.6973436,
+        "address.phoneNumber": "9511234154"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.5799371,
+          17.6973436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2453,
+        "shopName": "Centro de las Artes de San Agustín (CaSa)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Av. Independencia",
+        "address.city": "San Agustín Etla",
+        "address.postCode": "68247",
+        "address.country": "MX",
+        "address.longitude": -96.7779432,
+        "address.latitude": 17.161194,
+        "address.phoneNumber": "9511234156"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7779432,
+          17.161194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2454,
+        "shopName": "Centro Fotográfico Manuel Álvarez Bravo (CFMAB)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "116",
+        "address.streetName": "Calle Manuel Bravo",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7233014,
+        "address.latitude": 17.0618507,
+        "address.phoneNumber": "9511234157"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7233014,
+          17.0618507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2455,
+        "shopName": "Lagunas de Chacahua (Parque Nacional)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Acceso a Lagunas de Chacahua",
+        "address.city": "Villa de Tututepec de Melchor Ocampo",
+        "address.postCode": "71987",
+        "address.country": "MX",
+        "address.longitude": -97.5371222,
+        "address.latitude": 15.983879,
+        "address.phoneNumber": "9511234158"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.5371222,
+          15.983879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2456,
+        "shopName": "Playa Chipehua",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Carretera Costera, Playa Chipehua",
+        "address.city": "San Blas Atempa",
+        "address.postCode": "70762",
+        "address.country": "MX",
+        "address.longitude": -95.384388,
+        "address.latitude": 16.044939,
+        "address.phoneNumber": "9511234159"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.384388,
+          16.044939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2457,
+        "shopName": "Dunas de Chipehua",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Camino a las Dunas",
+        "address.city": "San Blas Atempa",
+        "address.postCode": "70762",
+        "address.country": "MX",
+        "address.longitude": -95.3757226,
+        "address.latitude": 16.0322511,
+        "address.phoneNumber": "9511234160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3757226,
+          16.0322511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2458,
+        "shopName": "Playa del Amor",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Camino a Playa del Amor",
+        "address.city": "San Pedro Pochutla",
+        "address.postCode": "70904",
+        "address.country": "MX",
+        "address.longitude": -96.5094574,
+        "address.latitude": 15.6599746,
+        "address.phoneNumber": "9511234161"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.5094574,
+          15.6599746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2465,
+        "shopName": "Playa Coral (Acceso Alto)",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Acceso superior a Playa Coral",
+        "address.city": "San Pedro Mixtepec",
+        "address.postCode": "71983",
+        "address.country": "MX",
+        "address.longitude": -97.08528,
+        "address.latitude": 15.8617807,
+        "address.phoneNumber": "9511234168"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.08528,
+          15.8617807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2460,
+        "shopName": "Playa El Arrocito",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Acceso a Playa El Arrocito",
+        "address.city": "Santa María Huatulco",
+        "address.postCode": "70987",
+        "address.country": "MX",
+        "address.longitude": -96.112591,
+        "address.latitude": 15.766681,
+        "address.phoneNumber": "9511234163"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.112591,
+          15.766681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2461,
+        "shopName": "Bahía Conejos",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Bahía Conejos",
+        "address.city": "Santa María Huatulco",
+        "address.postCode": "70989",
+        "address.country": "MX",
+        "address.longitude": -96.093179,
+        "address.latitude": 15.750934,
+        "address.phoneNumber": "9511234164"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.093179,
+          15.750934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2462,
+        "shopName": "Bahía de San Agustín",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Bahía de San Agustín",
+        "address.city": "Santa María Huatulco",
+        "address.postCode": "70985",
+        "address.country": "MX",
+        "address.longitude": -96.2368119,
+        "address.latitude": 15.6900628,
+        "address.phoneNumber": "9511234165"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.2368119,
+          15.6900628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2464,
+        "shopName": "Santiago Yosondúa",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Zona Centro",
+        "address.city": "Santiago Yosondúa",
+        "address.postCode": "71180",
+        "address.country": "MX",
+        "address.longitude": -97.5765074,
+        "address.latitude": 16.8721952,
+        "address.phoneNumber": "9511234167"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.5765074,
+          16.8721952
+        ]
+      }
+    }
+  ]
+}
