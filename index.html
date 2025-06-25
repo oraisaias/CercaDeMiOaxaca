@@ -69,6 +69,25 @@ body { margin: 0; padding: 0; }
 #closeButton:hover {
     color: #333;
 }
+.search-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+.search-button:hover {
+    background-color: #3367d6;
+}
+.search-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
 .point-info {
     margin-top: 30px;
 }
@@ -150,6 +169,9 @@ body { margin: 0; padding: 0; }
         <p><strong>Name:</strong> <span id="pointName">Loading...</span></p>
         <p><strong>Code:</strong> <span id="pointCode">Loading...</span></p>
         <p><strong>Shop:</strong> <span id="pointShop">Loading...</span></p>
+        <button id="googleSearchButton" class="search-button" onclick="searchOnGoogle()">
+            🔍 Search on Google
+        </button>
     </div>
 </div>
 <script>
@@ -439,6 +461,16 @@ document.getElementById('locationButton').addEventListener('click', () => {
 document.getElementById('closeButton').addEventListener('click', () => {
     document.getElementById('infoPanel').classList.remove('open');
 });
+
+// Función para buscar en Google
+function searchOnGoogle() {
+    const pointName = document.getElementById('pointName').textContent;
+    if (pointName && pointName !== 'Loading...') {
+        const searchQuery = encodeURIComponent(pointName);
+        const googleSearchUrl = `https://www.google.com/search?q=${searchQuery}`;
+        window.open(googleSearchUrl, '_blank');
+    }
+}
 
 map.on('click', (e) => {
     const features = map.queryRenderedFeatures(e.point, { layers: ['globe-points', 'routeLayer', 'shortestLine'] });
