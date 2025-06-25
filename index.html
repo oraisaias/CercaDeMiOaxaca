@@ -91,6 +91,7 @@ function getSpoke(airports) {
 function buildSpoke(airports, point) {
     let nearestAirports = turf.featureCollection([]);
     let nearestAirportLines = turf.featureCollection([]);
+    let shortestLine = null;
     let cleanedAirports = JSON.parse(JSON.stringify(airports));
 
     for (let i=1;i<=10;i++) {
@@ -106,8 +107,14 @@ function buildSpoke(airports, point) {
 
         const nearestLine = turf.lineString([point.geometry.coordinates, nearest.geometry.coordinates]);
         
+        // Guardar la línea más corta (la primera)
+        if (i === 1) {
+            shortestLine = nearestLine;
+        } else {
+            nearestAirportLines.features.push(nearestLine);
+        }
+        
         nearestAirports.features.push(nearest);
-        nearestAirportLines.features.push(nearestLine);
 
         const index = cleanedAirports.features.findIndex(n => n.properties.shopCode === nearest.properties.shopCode)
         if (index !== -1) {
@@ -116,14 +123,15 @@ function buildSpoke(airports, point) {
     }
 
     if (initLoad) {
-        addLayers(airports, nearestAirports, nearestAirportLines);
+        addLayers(airports, nearestAirports, nearestAirportLines, shortestLine);
     } else {
         map.getSource('newPoint').setData(nearestAirports);
         map.getSource('newLine').setData(nearestAirportLines);
+        map.getSource('shortestLine').setData(shortestLine);
     }
 }
 
-function addLayers(airports, nearest, route) {
+function addLayers(airports, nearest, route, shortestLine) {
     initLoad = false;
 
     map.addSource('points', {
@@ -139,6 +147,11 @@ function addLayers(airports, nearest, route) {
     map.addSource('newLine', {
         'type': 'geojson',
         'data': route
+    });
+
+    map.addSource('shortestLine', {
+        'type': 'geojson',
+        'data': shortestLine
     });
 
     map.addLayer({
@@ -219,6 +232,29 @@ function addLayers(airports, nearest, route) {
             'circle-opacity': 1,
             'circle-blur': 0,
             'circle-color': '#035690'
+        }
+    });
+
+    // Capa para la línea más corta (conexión más cercana)
+    map.addLayer({
+        'id': 'shortestLine',
+        'type': 'line',
+        'source': 'shortestLine',
+        'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-color': '#4CAF50',
+            'line-width': [
+                'interpolate',
+                ['linear'],
+                ['zoom'],
+                0,
+                1,
+                3,
+                6
+            ]
         }
     });
 }
