@@ -1,0 +1,169 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+}
+
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+#controlBar {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#locationButton {
+    padding: 8px 12px;
+    background-color: #007cbf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+#locationButton:hover {
+    background-color: #005a8b;
+}
+
+#infoPanel {
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    z-index: 1001;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#infoPanel.open {
+    right: 0;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+#closeButton:hover {
+    color: #333;
+}
+
+.search-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.search-button:hover {
+    background-color: #3367d6;
+}
+
+.search-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.point-info {
+    margin-top: 30px;
+}
+
+.point-info h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.point-info p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.point-info strong {
+    color: #333;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    #infoPanel {
+        width: 100%;
+        right: -100%;
+        padding: 15px;
+    }
+    
+    #closeButton {
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+    }
+    
+    .point-info {
+        margin-top: 40px;
+    }
+    
+    .point-info h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .point-info p {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+    
+    #controlBar {
+        bottom: 10px;
+        padding: 6px 12px;
+    }
+    
+    #locationButton {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    #infoPanel {
+        padding: 12px;
+    }
+    
+    .point-info h2 {
+        font-size: 16px;
+    }
+    
+    .point-info p {
+        font-size: 13px;
+    }
+} 
