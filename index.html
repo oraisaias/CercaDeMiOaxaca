@@ -84,6 +84,35 @@
     <button id="centerOaxacaButton" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 shadow-lg">
         🏛️ Centro Oaxaca
     </button>
+    <div class="flex items-center space-x-2 bg-white bg-opacity-90 px-3 py-2 rounded-lg">
+        <span class="text-xs font-medium text-gray-700">Radio:</span>
+        <input 
+            type="range" 
+            id="radiusSlider" 
+            min="0.1" 
+            max="5" 
+            value="1" 
+            step="0.1"
+            class="w-32 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+        >
+        <span id="radiusValue" class="text-xs font-medium text-gray-700 min-w-[3rem]">1 km</span>
+        <div class="flex items-center space-x-1">
+            <input 
+                type="checkbox" 
+                id="distanceModeToggle" 
+                class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+            >
+            <label for="distanceModeToggle" class="text-xs font-medium text-gray-700">Largo</label>
+        </div>
+        <div class="flex items-center space-x-1 ml-2">
+            <input 
+                type="checkbox" 
+                id="top5Toggle" 
+                class="w-3 h-3 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500"
+            >
+            <label for="top5Toggle" class="text-xs font-medium text-gray-700">Top 5</label>
+        </div>
+    </div>
 </div>
 <div id="infoPanel" class="bg-white shadow-2xl">
     <button id="closeButton" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl font-bold transition-colors duration-200">

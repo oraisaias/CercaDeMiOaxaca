@@ -1,5 +1,8 @@
 let initLoad = true;
 let allPoints = null; // Variable global para almacenar todos los puntos
+let currentRadius = 1; // Radio actual en kilómetros
+let isLongDistanceMode = false; // Modo de distancia larga
+let showTop5Only = false; // Mostrar solo las 5 más cercanas
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWpyYWUiLCJhIjoiZjYyMDFjMTJhNjVhNjRmZGFmNjM1MjE1YTYxYjA3YmYifQ.FpDHggdIAaeBm7v0clXkrA';
 const map = new mapboxgl.Map({
@@ -24,6 +27,7 @@ map.on('load', () => {
             airports = d;
             allPoints = d; // Guardar todos los puntos
             getSpoke(airports);
+            setupRadiusControl(); // Configurar el control de radio
             
             // Ocultar splash screen después de que todo esté cargado
             setTimeout(() => {
@@ -37,9 +41,89 @@ map.on('load', () => {
 
         map.on('move', () => {
             getSpoke(airports);
+            // Actualizar la posición de la cruz central
+            updateCenterCross();
         });
     });
 });
+
+// Función para configurar el control de radio
+function setupRadiusControl() {
+    const radiusSlider = document.getElementById('radiusSlider');
+    const radiusValue = document.getElementById('radiusValue');
+    const distanceModeToggle = document.getElementById('distanceModeToggle');
+    const top5Toggle = document.getElementById('top5Toggle');
+
+    // Función para actualizar el slider según el modo
+    function updateSliderMode() {
+        if (isLongDistanceMode) {
+            // Modo largo: 5-200 km
+            radiusSlider.min = 5;
+            radiusSlider.max = 200;
+            radiusSlider.step = 1;
+            if (currentRadius < 5) currentRadius = 5;
+            if (currentRadius > 200) currentRadius = 200;
+        } else {
+            // Modo corto: 0.1-5 km
+            radiusSlider.min = 0.1;
+            radiusSlider.max = 5;
+            radiusSlider.step = 0.1;
+            if (currentRadius > 5) currentRadius = 5;
+            if (currentRadius < 0.1) currentRadius = 0.1;
+        }
+        
+        radiusSlider.value = currentRadius;
+        updateRadiusDisplay();
+    }
+
+    // Función para actualizar la visualización del radio
+    function updateRadiusDisplay() {
+        if (isLongDistanceMode) {
+            radiusValue.textContent = `${currentRadius.toFixed(0)} km`;
+        } else {
+            if (currentRadius < 1) {
+                radiusValue.textContent = `${(currentRadius * 1000).toFixed(0)} m`;
+            } else {
+                radiusValue.textContent = `${currentRadius.toFixed(1)} km`;
+            }
+        }
+    }
+
+    // Event listener para el slider
+    radiusSlider.addEventListener('input', (e) => {
+        currentRadius = parseFloat(e.target.value);
+        updateRadiusDisplay();
+        
+        // Actualizar las líneas con el nuevo radio
+        if (allPoints) {
+            getSpoke(allPoints);
+        }
+    });
+
+    // Event listener para el toggle de modo
+    distanceModeToggle.addEventListener('change', (e) => {
+        isLongDistanceMode = e.target.checked;
+        updateSliderMode();
+        
+        // Actualizar las líneas con el nuevo radio
+        if (allPoints) {
+            getSpoke(allPoints);
+        }
+    });
+
+    // Event listener para el toggle Top 5
+    top5Toggle.addEventListener('change', (e) => {
+        showTop5Only = e.target.checked;
+        
+        // Actualizar las líneas con la nueva configuración
+        if (allPoints) {
+            getSpoke(allPoints);
+        }
+    });
+
+    // Inicializar el modo
+    updateSliderMode();
+}
 
 function getSpoke(airports) {
     const center = map.getCenter();
@@ -53,8 +137,34 @@ function buildSpoke(airports, point) {
     let shortestLine = null;
     let cleanedAirports = JSON.parse(JSON.stringify(airports));
 
-    for (let i=1;i<=10;i++) {
-        const nearest = turf.nearestPoint(point, cleanedAirports);
+    // Filtrar puntos dentro del radio especificado
+    const pointsInRadius = cleanedAirports.features.filter(feature => {
+        const distance = turf.distance(point, feature, {units: 'kilometers'});
+        return distance <= currentRadius;
+    });
+
+    // Si no hay puntos en el radio, no mostrar líneas
+    if (pointsInRadius.length === 0) {
+        if (initLoad) {
+            addLayers(airports, nearestAirports, nearestAirportLines, shortestLine);
+        } else {
+            map.getSource('newPoint').setData(nearestAirports);
+            map.getSource('newLine').setData(nearestAirportLines);
+            map.getSource('shortestLine').setData(shortestLine);
+        }
+        return;
+    }
+
+    // Crear una nueva colección con solo los puntos en el radio
+    const filteredAirports = {
+        type: 'FeatureCollection',
+        features: pointsInRadius
+    };
+
+    // Encontrar los puntos más cercanos dentro del radio
+    const maxPoints = showTop5Only ? 5 : 10;
+    for (let i=1;i<=maxPoints && i<=pointsInRadius.length;i++) {
+        const nearest = turf.nearestPoint(point, filteredAirports);
         const startLng = point.geometry.coordinates[0];
         const endLng = nearest.geometry.coordinates[0];
         
@@ -74,9 +184,10 @@ function buildSpoke(airports, point) {
         
         nearestAirports.features.push(nearest);
 
-        const index = cleanedAirports.features.findIndex(n => n.properties.shopCode === nearest.properties.shopCode)
+        // Remover el punto usado para no repetirlo
+        const index = filteredAirports.features.findIndex(n => n.properties.shopCode === nearest.properties.shopCode);
         if (index !== -1) {
-            cleanedAirports.features.splice(index, 1);
+            filteredAirports.features.splice(index, 1);
         }
     }
 
@@ -96,6 +207,31 @@ function addLayers(airports, nearest, route, shortestLine) {
     map.addSource('newPoint', { 'type': 'geojson', 'data': nearest });
     map.addSource('newLine', { 'type': 'geojson', 'data': route });
     map.addSource('shortestLine', { 'type': 'geojson', 'data': shortestLine });
+
+    // Agregar fuente para el punto central (cruz)
+    const centerPoint = turf.point([map.getCenter().lng, map.getCenter().lat]);
+    map.addSource('centerPoint', {
+        'type': 'geojson',
+        'data': centerPoint
+    });
+
+    // Capa para la cruz central
+    map.addLayer({
+        'id': 'centerCross',
+        'type': 'symbol',
+        'source': 'centerPoint',
+        'layout': {
+            'text-field': '✚',
+            'text-size': 24,
+            'text-allow-overlap': true,
+            'text-ignore-placement': true
+        },
+        'paint': {
+            'text-color': '#ff0000',
+            'text-halo-color': '#ffffff',
+            'text-halo-width': 2
+        }
+    });
 
     map.addLayer({
         'id': 'globe-points',
@@ -245,4 +381,14 @@ map.on('click', (e) => {
             document.getElementById('infoPanel').classList.add('open');
         }
     }
-}); 
+});
+
+// Función para actualizar la cruz central
+function updateCenterCross() {
+    const center = map.getCenter();
+    const centerPoint = turf.point([center.lng, center.lat]);
+    
+    if (map.getSource('centerPoint')) {
+        map.getSource('centerPoint').setData(centerPoint);
+    }
+} 
