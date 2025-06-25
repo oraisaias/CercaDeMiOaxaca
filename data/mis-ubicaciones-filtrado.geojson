@@ -717,6 +717,48 @@
     {
       "type": "Feature",
       "properties": {
+        "shopCode": 10002,
+        "shopName": "Fábrica de Mezcal Real de Minas",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Carretera a San Lorenzo Albarradas",
+        "address.city": "Tlacolula de Matamoros",
+        "address.postCode": "70400",
+        "address.country": "MX",
+        "address.longitude": -96.6133245,
+        "address.latitude": 16.7809941,
+        "address.phoneNumber": "9511234567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.6133245, 16.7809941]
+      }
+    }
+,    
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 10001,
+        "shopName": "Andador Turístico Oaxaca",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Andador Macedonio Alcalá",
+        "address.city": "Oaxaca de Juárez",
+        "address.postCode": "68000",
+        "address.country": "MX",
+        "address.longitude": -96.7241719,
+        "address.latitude": 17.0635986,
+        "address.phoneNumber": "9511234567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.7241719, 17.0635986]
+      }
+    }
+,    
+    {
+      "type": "Feature",
+      "properties": {
         "shopCode": 2418,
         "shopName": "Árbol del Tule",
         "priceListId": 10,
@@ -993,26 +1035,169 @@
     {
       "type": "Feature",
       "properties": {
-        "shopCode": 2428,
+        "shopCode": 10003,
         "shopName": "Teatro Macedonio Alcalá",
         "priceListId": 10,
-        "address.houseNumberOrName": "900",
-        "address.streetName": "Avenida Independencia",
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Av. Independencia 900",
         "address.city": "Oaxaca de Juárez",
         "address.postCode": "68000",
         "address.country": "MX",
-        "address.longitude": -96.7206904,
-        "address.latitude": 17.0624002,
-        "address.phoneNumber": "9511234131"
+        "address.longitude": -96.723448,
+        "address.latitude": 17.0615756,
+        "address.phoneNumber": "9511234567"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -96.7206904,
-          17.0624002
-        ]
+        "coordinates": [-96.723448, 17.0615756]
       }
     },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 10004,
+        "shopName": "El Boquerón",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "El Boquerón",
+        "address.city": "Santiago Juxtlahuaca",
+        "address.postCode": "69805",
+        "address.country": "MX",
+        "address.longitude": -97.6334946,
+        "address.latitude": 17.2487832,
+        "address.phoneNumber": "9511234567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.6334946, 17.2487832]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 10006,
+        "shopName": "Zuzul",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Camino a Zuzul",
+        "address.city": "San Lorenzo Albarradas",
+        "address.postCode": "70450",
+        "address.country": "MX",
+        "address.longitude": -96.2186781,
+        "address.latitude": 17.8116058,
+        "address.phoneNumber": "9511234567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.2186781, 17.8116058]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 10008,
+        "shopName": "Puente Colgante de Cuajimoloyas",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Camino al Puente Colgante",
+        "address.city": "Cuajimoloyas",
+        "address.postCode": "68259",
+        "address.country": "MX",
+        "address.longitude": -96.45786,
+        "address.latitude": 17.114648,
+        "address.phoneNumber": "9511234567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.45786, 17.114648]
+      }
+    }
+,
+{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 10010,
+    "shopName": "Lago La Nevería",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Camino al Lago",
+    "address.city": "La Nevería",
+    "address.postCode": "68247",
+    "address.country": "MX",
+    "address.longitude": -96.4214474,
+    "address.latitude": 17.1298214,
+    "address.phoneNumber": "9511234567"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-96.4214474, 17.1298214]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 10011,
+    "shopName": "Santa Catarina Juquila",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Centro",
+    "address.city": "Santa Catarina Juquila",
+    "address.postCode": "71900",
+    "address.country": "MX",
+    "address.longitude": -97.2932803,
+    "address.latitude": 16.2375067,
+    "address.phoneNumber": "9511234567"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.2932803, 16.2375067]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 10012,
+    "shopName": "Crucecita",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Centro",
+    "address.city": "Crucecita",
+    "address.postCode": "70980",
+    "address.country": "MX",
+    "address.longitude": -96.1341431,
+    "address.latitude": 15.7691974,
+    "address.phoneNumber": "9511234567"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-96.1341431, 15.7691974]
+  }
+}
+
+,
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 10007,
+        "shopName": "Santiago Clavellinas",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Centro de la localidad",
+        "address.city": "Santiago Clavellinas",
+        "address.postCode": "71225",
+        "address.country": "MX",
+        "address.longitude": -96.9308147,
+        "address.latitude": 16.9207738,
+        "address.phoneNumber": "9511234567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.9308147, 16.9207738]
+      }
+    }
+    
+
+    ,
     {
       "type": "Feature",
       "properties": {
@@ -1588,6 +1773,7 @@
         ]
       }
     },
+    
     {
       "type": "Feature",
       "properties": {

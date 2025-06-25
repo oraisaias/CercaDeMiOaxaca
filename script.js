@@ -6,7 +6,7 @@ const map = new mapboxgl.Map({
     container: 'map',
     style: 'https://api.maptiler.com/maps/basic/style.json?key=1HCKO0pQuPEfNXXzGgSM',
     center: [-96.7278992, 17.0608748],
-    zoom: 15,
+    zoom: 10,
     projection: 'globe',
     maxZoom: 18,
     // Límites expandidos para Oaxaca con más libertad de movimiento
@@ -24,7 +24,6 @@ map.on('load', () => {
             airports = d;
             allPoints = d; // Guardar todos los puntos
             getSpoke(airports);
-            setupSearch(); // Configurar la búsqueda
             
             // Ocultar splash screen después de que todo esté cargado
             setTimeout(() => {
@@ -41,66 +40,6 @@ map.on('load', () => {
         });
     });
 });
-
-// Función para configurar la búsqueda
-function setupSearch() {
-    const searchInput = document.getElementById('searchInput');
-    const clearSearch = document.getElementById('clearSearch');
-
-    searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase().trim();
-        
-        if (searchTerm.length > 0) {
-            clearSearch.style.display = 'flex';
-            filterPoints(searchTerm);
-        } else {
-            clearSearch.style.display = 'none';
-            showAllPoints();
-        }
-    });
-
-    clearSearch.addEventListener('click', () => {
-        searchInput.value = '';
-        clearSearch.style.display = 'none';
-        showAllPoints();
-    });
-}
-
-// Función para filtrar puntos
-function filterPoints(searchTerm) {
-    if (!allPoints) return;
-
-    const filteredFeatures = allPoints.features.filter(feature => {
-        const name = (feature.properties.shopName || '').toLowerCase();
-        const city = (feature.properties['address.city'] || feature.properties.city || '').toLowerCase();
-        
-        return name.includes(searchTerm) || city.includes(searchTerm);
-    });
-
-    const filteredData = {
-        type: 'FeatureCollection',
-        features: filteredFeatures
-    };
-
-    // Actualizar la fuente de datos del mapa
-    if (map.getSource('points')) {
-        map.getSource('points').setData(filteredData);
-    }
-
-    // Actualizar las líneas de conexión con los puntos filtrados
-    getSpoke(filteredData);
-}
-
-// Función para mostrar todos los puntos
-function showAllPoints() {
-    if (!allPoints) return;
-
-    if (map.getSource('points')) {
-        map.getSource('points').setData(allPoints);
-    }
-
-    getSpoke(allPoints);
-}
 
 function getSpoke(airports) {
     const center = map.getCenter();
