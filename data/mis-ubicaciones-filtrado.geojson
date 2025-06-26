@@ -1796,6 +1796,174 @@
           16.8721952
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2466,
+        "shopName": "Playa Bacocho",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Playa Bacocho",
+        "address.city": "San Pedro Mixtepec",
+        "address.postCode": "71983",
+        "address.country": "MX",
+        "address.longitude": -97.0926619,
+        "address.latitude": 15.8657049,
+        "address.phoneNumber": "9511234168"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.0926619, 15.8657049]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shopCode": 2467,
+        "shopName": "Playa Delfín",
+        "priceListId": 10,
+        "address.houseNumberOrName": "S/N",
+        "address.streetName": "Playa Delfín",
+        "address.city": "San Pedro Mixtepec",
+        "address.postCode": "71983",
+        "address.country": "MX",
+        "address.longitude": -97.1230905,
+        "address.latitude": 15.8859754,
+        "address.phoneNumber": "9511234168"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.1230905, 15.8859754]
+      }
     }
+,{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2468,
+    "shopName": "Liberación de tortugas",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Campamento Tortuguero Vive Mar",
+    "address.city": "Puerto Escondido",
+    "address.postCode": "71983",
+    "address.country": "MX",
+    "address.longitude": -97.0912642,
+    "address.latitude": 15.8656348,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.0912642, 15.8656348]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2469,
+    "shopName": "El Cafecito",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Av. Del Morro",
+    "address.city": "Puerto Escondido",
+    "address.postCode": "71983",
+    "address.country": "MX",
+    "address.longitude": -97.0549203,
+    "address.latitude": 15.8521515,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.0549203, 15.8521515]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2470,
+    "shopName": "La Punta Zicatela",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "La Punta",
+    "address.city": "Puerto Escondido",
+    "address.postCode": "71983",
+    "address.country": "MX",
+    "address.longitude": -97.0454379,
+    "address.latitude": 15.8340103,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.0454379, 15.8340103]
+  }
+}
+,{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2471,
+    "shopName": "Playa El Tomatal",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Playa El Tomatal",
+    "address.city": "El Tomatal",
+    "address.postCode": "71983",
+    "address.country": "MX",
+    "address.longitude": -96.9205555,
+    "address.latitude": 15.7847222,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-96.9205555, 15.7847222]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2472,
+    "shopName": "Bioluminiscencia (Laguna de Manialtepec)",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Laguna de Manialtepec",
+    "address.city": "San Pedro Mixtepec",
+    "address.postCode": "71983",
+    "address.country": "MX",
+    "address.longitude": -97.1865791,
+    "address.latitude": 15.9466597,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.1865791, 15.9466597]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2473,
+    "shopName": "Aguas Termales Atotonilco",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Camino a Atotonilco",
+    "address.city": "San Pedro Mixtepec",
+    "address.postCode": "71983",
+    "address.country": "MX",
+    "address.longitude": -97.219191,
+    "address.latitude": 15.998598,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.219191, 15.998598]
+  }
+}
+
+
+
+
+    
+
+
+
   ]
 }

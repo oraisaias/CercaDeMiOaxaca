@@ -197,6 +197,12 @@ function buildSpoke(airports, point) {
         map.getSource('newPoint').setData(nearestAirports);
         map.getSource('newLine').setData(nearestAirportLines);
         map.getSource('shortestLine').setData(shortestLine);
+        
+        // Actualizar fuente para el punto más cercano si existe
+        if (nearestAirports.features.length > 0 && map.getSource('closestPointSource')) {
+            const closestPoint = turf.featureCollection([nearestAirports.features[0]]);
+            map.getSource('closestPointSource').setData(closestPoint);
+        }
     }
 }
 
@@ -281,6 +287,24 @@ function addLayers(airports, nearest, route, shortestLine) {
     map.on('mouseenter', 'globe-newPoint', () => { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', 'globe-newPoint', () => { map.getCanvas().style.cursor = ''; });
 
+    // Capa adicional para pequeños círculos al final de las líneas
+    map.addLayer({
+        'id': 'line-end-points',
+        'type': 'circle',
+        'source': 'newPoint',
+        'paint': {
+            'circle-radius': [ 'interpolate', ['linear'], ['zoom'], 0, 2, 3, 6 ],
+            'circle-opacity': 0.8,
+            'circle-blur': 0,
+            'circle-color': '#035690',
+            'circle-stroke-width': 1,
+            'circle-stroke-color': '#ffffff'
+        }
+    });
+
+    map.on('mouseenter', 'line-end-points', () => { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', 'line-end-points', () => { map.getCanvas().style.cursor = ''; });
+
     map.addLayer({
         'id': 'routeLayer',
         'type': 'line',
@@ -308,6 +332,32 @@ function addLayers(airports, nearest, route, shortestLine) {
 
     map.on('mouseenter', 'shortestLine', () => { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', 'shortestLine', () => { map.getCanvas().style.cursor = ''; });
+
+    // Capa para el punto más cercano (línea verde) - más grande y destacado
+    if (nearest.features.length > 0) {
+        const closestPoint = turf.featureCollection([nearest.features[0]]);
+        map.addSource('closestPointSource', {
+            'type': 'geojson',
+            'data': closestPoint
+        });
+        
+        map.addLayer({
+            'id': 'closest-point',
+            'type': 'circle',
+            'source': 'closestPointSource',
+            'paint': {
+                'circle-radius': [ 'interpolate', ['linear'], ['zoom'], 0, 3, 3, 8 ],
+                'circle-opacity': 0.9,
+                'circle-blur': 0,
+                'circle-color': '#4CAF50',
+                'circle-stroke-width': 2,
+                'circle-stroke-color': '#ffffff'
+            }
+        });
+
+        map.on('mouseenter', 'closest-point', () => { map.getCanvas().style.cursor = 'pointer'; });
+        map.on('mouseleave', 'closest-point', () => { map.getCanvas().style.cursor = ''; });
+    }
 }
 
 // Event listeners
