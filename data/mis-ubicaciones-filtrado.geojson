@@ -2016,7 +2016,49 @@
     "type": "Point",
     "coordinates": [-97.7803482, 17.8112504]
   }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2477,
+    "shopName": "Playa Agua Blanca",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Playa Agua Blanca",
+    "address.city": "San Pedro Mixtepec",
+    "address.postCode": "71980",
+    "address.country": "MX",
+    "address.longitude": -96.8082084,
+    "address.latitude": 15.7346236,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-96.8082084, 15.7346236]
+  }
 }
+,
+{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2478,
+    "shopName": "Mirador de las Tortugas",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Mirador de las Tortugas",
+    "address.city": "Puerto Escondido",
+    "address.postCode": "71983",
+    "address.country": "MX",
+    "address.longitude": -97.0912642,
+    "address.latitude": 15.8656348,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.0912642, 15.8656348]
+  }
+}
+
 
 
 

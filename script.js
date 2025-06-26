@@ -1,7 +1,7 @@
 let initLoad = true;
 let allPoints = null; // Variable global para almacenar todos los puntos
-let currentRadius = 1; // Radio actual en kilómetros
-let isLongDistanceMode = false; // Modo de distancia larga
+let currentRadius = 100; // Radio actual en kilómetros (cambiado a 100km por defecto)
+let isLongDistanceMode = true; // Modo de distancia larga (activado por defecto)
 let showTop5Only = false; // Mostrar solo las 5 más cercanas
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWpyYWUiLCJhIjoiZjYyMDFjMTJhNjVhNjRmZGFmNjM1MjE1YTYxYjA3YmYifQ.FpDHggdIAaeBm7v0clXkrA';
