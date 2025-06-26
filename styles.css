@@ -127,6 +127,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    /* Mejoras para móviles */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .control-row {
@@ -145,6 +148,11 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    /* Mejoras para móviles */
+    min-height: 44px; /* Mínimo recomendado para tocar */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 .location-btn {
@@ -211,6 +219,12 @@ body {
     -webkit-appearance: none;
     appearance: none;
     cursor: pointer;
+    /* Mejoras para móviles */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    /* Aumentar área de toque */
+    padding: 8px 0;
+    margin: -8px 0;
 }
 
 .radius-slider::-webkit-slider-thumb {
@@ -264,6 +278,11 @@ body {
     position: relative;
     -webkit-appearance: none;
     appearance: none;
+    /* Mejoras para móviles */
+    min-width: 20px;
+    min-height: 20px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .toggle-checkbox:checked {
@@ -346,16 +365,219 @@ body {
 /* Responsive para móviles */
 @media (max-width: 768px) {
     #controlBar {
-        bottom: 16px;
-        left: 16px;
-        right: 16px;
+        bottom: 10px;
+        left: 4px;
+        right: 4px;
+        padding: 10px 6px;
+        gap: 10px;
+        border-radius: 12px;
+    }
+    .control-row {
+        gap: 6px;
+    }
+    .control-button {
+        padding: 10px 0;
+        font-size: 15px;
+        border-radius: 8px;
+        min-height: 38px;
+    }
+    .radius-control {
+        margin: 4px 0;
+    }
+    .radius-header {
+        margin-bottom: 4px;
+    }
+    .radius-label {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .radius-value {
+        font-size: 14px;
+        padding: 2px 8px;
+        min-width: 48px;
+        border-radius: 5px;
+    }
+    .slider-container {
+        padding: 0 2px;
+    }
+    .radius-slider {
+        height: 6px;
+        padding: 4px 0;
+        margin: -4px 0;
+    }
+    .radius-slider::-webkit-slider-thumb {
+        width: 18px;
+        height: 18px;
+    }
+    .radius-slider::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+    }
+    .toggle-controls {
+        gap: 10px;
+        margin-top: 2px;
+    }
+    .toggle-item {
+        gap: 4px;
+    }
+    .toggle-label {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .toggle-checkbox {
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        border-width: 2px;
+    }
+    .toggle-checkbox:checked::after {
+        font-size: 11px;
+    }
+    #infoPanel {
+        width: 100%;
+        right: -100%;
+        padding: 0;
+    }
+    #closeButton {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+    .point-info {
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .point-info h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .point-info p {
+        font-size: 13px;
+        margin: 6px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #controlBar {
+        bottom: 6px;
+        left: 2px;
+        right: 2px;
+        padding: 6px 2px;
+        gap: 6px;
+    }
+    .control-button {
+        padding: 8px 0;
+        font-size: 13px;
+        min-height: 32px;
+    }
+    .radius-label {
+        font-size: 12px;
+    }
+    .radius-value {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+    .toggle-label {
+        font-size: 11px;
+    }
+    .toggle-checkbox {
+        width: 14px;
+        height: 14px;
+    }
+    .toggle-checkbox:checked::after {
+        font-size: 9px;
+    }
+    .point-info {
+        padding: 6px;
+    }
+    .point-info h2 {
+        font-size: 13px;
+    }
+    .point-info p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    #controlBar {
+        bottom: 12px;
+        left: 6px;
+        right: 6px;
+        padding: 16px;
+        gap: 12px;
+    }
+    
+    .control-button {
+        padding: 16px 18px;
+        font-size: 15px;
+        min-height: 52px;
+    }
+    
+    .radius-label {
+        font-size: 15px;
+    }
+    
+    .radius-value {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+    
+    .toggle-label {
+        font-size: 15px;
+    }
+    
+    .toggle-checkbox {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .toggle-checkbox:checked::after {
+        font-size: 13px;
+    }
+}
+
+/* Orientación vertical en móviles */
+@media (max-width: 768px) and (orientation: portrait) {
+    #controlBar {
+        bottom: 15px;
+        left: 8px;
+        right: 8px;
         padding: 20px;
+    }
+    
+    .control-button {
+        min-height: 58px;
+        font-size: 17px;
+    }
+    
+    .radius-slider::-webkit-slider-thumb {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .radius-slider::-moz-range-thumb {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Orientación horizontal en móviles */
+@media (max-width: 768px) and (orientation: landscape) {
+    #controlBar {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 16px;
         gap: 16px;
     }
     
     .control-button {
         padding: 16px 20px;
         font-size: 16px;
+        min-height: 50px;
     }
     
     .radius-label {
@@ -364,7 +586,6 @@ body {
     
     .radius-value {
         font-size: 16px;
-        padding: 6px 12px;
     }
     
     .toggle-label {
@@ -374,64 +595,5 @@ body {
     .toggle-checkbox {
         width: 24px;
         height: 24px;
-    }
-    
-    .toggle-checkbox:checked::after {
-        font-size: 14px;
-    }
-    
-    #infoPanel {
-        width: 100%;
-        right: -100%;
-        padding: 0;
-    }
-    
-    #closeButton {
-        top: 15px;
-        right: 15px;
-        font-size: 24px;
-    }
-    
-    .point-info {
-        margin-top: 40px;
-    }
-    
-    .point-info h2 {
-        font-size: 18px;
-        margin-bottom: 12px;
-    }
-    
-    .point-info p {
-        font-size: 14px;
-        margin: 6px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    #controlBar {
-        bottom: 12px;
-        left: 12px;
-        right: 12px;
-        padding: 16px;
-    }
-    
-    .control-row {
-        gap: 12px;
-    }
-    
-    .toggle-controls {
-        gap: 20px;
-    }
-    
-    #infoPanel {
-        padding: 0;
-    }
-    
-    .point-info h2 {
-        font-size: 16px;
-    }
-    
-    .point-info p {
-        font-size: 13px;
     }
 } 
