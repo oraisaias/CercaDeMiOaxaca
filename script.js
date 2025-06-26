@@ -364,10 +364,57 @@ function addLayers(airports, nearest, route, shortestLine) {
 document.getElementById('locationButton').addEventListener('click', () => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
+            const userLat = position.coords.latitude;
+            const userLng = position.coords.longitude;
+            
+            // Límites aproximados del estado de Oaxaca
+            // Estos límites cubren la mayor parte del estado de Oaxaca
+            const oaxacaBounds = {
+                north: 18.5,  // Latitud norte
+                south: 15.5,  // Latitud sur
+                east: -93.5,  // Longitud este
+                west: -98.5   // Longitud oeste
+            };
+            
+            // Verificar si la ubicación está dentro de Oaxaca
+            const isInOaxaca = userLat >= oaxacaBounds.south && 
+                              userLat <= oaxacaBounds.north && 
+                              userLng >= oaxacaBounds.west && 
+                              userLng <= oaxacaBounds.east;
+            
+            if (isInOaxaca) {
+                // Si está en Oaxaca, centrar en la ubicación del usuario
+                map.jumpTo({
+                    center: [userLng, userLat],
+                    zoom: 15
+                });
+            } else {
+                // Si está fuera de Oaxaca, mostrar alerta y redirigir al centro
+                alert('Tu ubicación está fuera del estado de Oaxaca. Te estamos redirigiendo al centro de la ciudad de Oaxaca.');
+                
+                // Centrar en el centro de Oaxaca
+                map.jumpTo({
+                    center: [-96.7236, 17.0732],
+                    zoom: 12
+                });
+            }
+        }, (error) => {
+            // En caso de error de geolocalización, mostrar mensaje y centrar en Oaxaca
+            console.error('Error de geolocalización:', error);
+            alert('No se pudo obtener tu ubicación. Te estamos redirigiendo al centro de la ciudad de Oaxaca.');
+            
             map.jumpTo({
-                center: [position.coords.longitude, position.coords.latitude],
-                zoom: 15
+                center: [-96.7236, 17.0732],
+                zoom: 12
             });
+        });
+    } else {
+        // Si el navegador no soporta geolocalización
+        alert('Tu navegador no soporta geolocalización. Te estamos redirigiendo al centro de la ciudad de Oaxaca.');
+        
+        map.jumpTo({
+            center: [-96.7236, 17.0732],
+            zoom: 12
         });
     }
 });

@@ -1956,7 +1956,69 @@
     "type": "Point",
     "coordinates": [-97.219191, 15.998598]
   }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2474,
+    "shopName": "Presa de San Francisco Yosocuta",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "Presa Yosocuta",
+    "address.city": "Huajuapan de León",
+    "address.postCode": "69000",
+    "address.country": "MX",
+    "address.longitude": -97.8167155,
+    "address.latitude": 17.7307398,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.8167155, 17.7307398]
+  }
 }
+,{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2475,
+    "shopName": "Cascadas de Apoala",
+    "priceListId": 10,
+    "address.houseNumberOrName": "S/N",
+    "address.streetName": "San Pedro Apoala",
+    "address.city": "San Pedro Apoala",
+    "address.postCode": "69690",
+    "address.country": "MX",
+    "address.longitude": -97.0091,
+    "address.latitude": 17.6661,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.0091, 17.6661]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "shopCode": 2476,
+    "shopName": "Huajuapan de León",
+    "priceListId": 10,
+    "address.houseNumberOrName": "Centro",
+    "address.streetName": "Av. 5 de febrero",
+    "address.city": "Heroica Ciudad de Huajuapan de León",
+    "address.postCode": "69000",
+    "address.country": "MX",
+    "address.longitude": -97.7803482,
+    "address.latitude": 17.8112504,
+    "address.phoneNumber": "9511234168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-97.7803482, 17.8112504]
+  }
+}
+
+
 
 
 
