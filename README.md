@@ -1,5 +1,13 @@
 # 🏛️ CercaDeMiOaxaca
 
+<p align="center">
+  <img src="assets/image.png" alt="Vista de la app CercaDeMiOaxaca" width="320" />
+</p>
+
+<p align="center">
+  <a href="https://oraisaias.github.io/CercaDeMiOaxaca/" target="_blank"><strong>🌐 Ver el sitio funcionando</strong></a>
+</p>
+
 ## Descripción del Proyecto
 
 **CercaDeMiOaxaca** es un mapa interactivo web que permite explorar y descubrir ubicaciones en el estado de Oaxaca, México. Es una herramienta de navegación geográfica que conecta puntos de interés con líneas de conexión visuales.
